@@ -2,7 +2,7 @@ import About from 'components/About';
 import Experience from 'components/Experience';
 import Hero from 'components/Hero';
 import Skills from 'components/Skiills';
-import type { GetServerSideProps, NextPage } from 'next';
+import type { GetServerSideProps, GetStaticPropsContext, NextPage } from 'next';
 import Head from 'next/head';
 
 const Home: NextPage = () => {
@@ -55,8 +55,8 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-export async function getServerSideProps(context: GetServerSideProps) {
+export async function getStaticProps(context: GetStaticPropsContext) {
   return {
-    props: {},
+    props: {}, // will be passed to the page component as props
   };
 }
