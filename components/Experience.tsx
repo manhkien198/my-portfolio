@@ -3,7 +3,7 @@ import ExperienceCard from './ExperienceCard';
 import Ts from 'assets/images/typescript.png';
 import Css from 'assets/images/css.png';
 import Html from 'assets/images/html.png';
-import React from 'assets/images/react.png';
+import React from 'assets/images/React.png';
 import Next from 'assets/images/nextjs.png';
 export default function Experience() {
   return (
